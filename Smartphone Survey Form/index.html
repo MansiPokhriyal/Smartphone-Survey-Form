@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Usage & Preferences Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Smartphone Usage & Preferences Survey</h1>
+    <p id="description">Please take a moment to fill out this survey about your smartphone habits and preferences.</p>
+
+    <form id="survey-form">
+        <!-- Name -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Age -->
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required>
+
+        <!-- Age Group -->
+        <label>Age Group:</label>
+        <select id="dropdown" name="age-group" required>
+            <option value="">--Select--</option>
+            <option value="under18">Under 18</option>
+            <option value="18-24">18–24</option>
+            <option value="25-34">25–34</option>
+            <option value="35-44">35–44</option>
+            <option value="45+">45+</option>
+        </select>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="prefer-not"> Prefer not to say</label>
+
+        <!-- Smartphone Brand -->
+        <label>Which smartphone brand do you currently use?</label>
+        <select name="brand" required>
+            <option value="">--Select--</option>
+            <option value="apple">Apple</option>
+            <option value="samsung">Samsung</option>
+            <option value="oneplus">OnePlus</option>
+            <option value="xiaomi">Xiaomi/Redmi</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Daily Usage Hours -->
+        <label>How many hours per day do you spend on your smartphone?</label>
+        <label><input type="radio" name="usage" value="less2" required> Less than 2 hours</label>
+        <label><input type="radio" name="usage" value="2-4"> 2–4 hours</label>
+        <label><input type="radio" name="usage" value="4-6"> 4–6 hours</label>
+        <label><input type="radio" name="usage" value="6-8"> 6–8 hours</label>
+        <label><input type="radio" name="usage" value="8+"> More than 8 hours</label>
+
+        <!-- Primary Use -->
+        <label>What is your primary use of the smartphone? (Select all that apply)</label>
+        <label><input type="checkbox" name="use" value="social-media"> Social media</label>
+        <label><input type="checkbox" name="use" value="communication"> Communication</label>
+        <label><input type="checkbox" name="use" value="entertainment"> Entertainment</label>
+        <label><input type="checkbox" name="use" value="work-study"> Work/Study</label>
+        <label><input type="checkbox" name="use" value="shopping"> Shopping</label>
+        
+        <!-- OS Preference -->
+        <label>Do you prefer Android or iOS?</label>
+        <label><input type="radio" name="os" value="android" required> Android</label>
+        <label><input type="radio" name="os" value="ios"> iOS</label>
+        <label><input type="radio" name="os" value="no-pref"> No preference</label>
+
+        <!-- Change Frequency -->
+        <label>How often do you change your smartphone?</label>
+        <label><input type="radio" name="change" value="yearly" required> Every year</label>
+        <label><input type="radio" name="change" value="2-years"> Every 2 years</label>
+        <label><input type="radio" name="change" value="3-4-years"> Every 3–4 years</label>
+        <label><input type="radio" name="change" value="only-stop"> Only when it stops working</label>
+
+        <!-- Important Feature -->
+        <label>What feature is most important to you when choosing a smartphone?</label>
+        <label><input type="radio" name="feature" value="camera" required> Camera quality</label>
+        <label><input type="radio" name="feature" value="battery"> Battery life</label>
+        <label><input type="radio" name="feature" value="performance"> Performance/Speed</label>
+        <label><input type="radio" name="feature" value="design"> Design/Looks</label>
+        <label><input type="radio" name="feature" value="price"> Price</label>
+
+        <!-- Brand Loyalty -->
+        <label>Are you willing to try a new smartphone brand or stick to your current one?</label>
+        <label><input type="radio" name="loyalty" value="new" required> Willing to try new brands</label>
+        <label><input type="radio" name="loyalty" value="stick"> Prefer to stick to current brand</label>
+
+        <!-- Comments -->
+        <label>Additional Comments:</label>
+        <textarea name="comments" placeholder="Your feedback"></textarea>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
