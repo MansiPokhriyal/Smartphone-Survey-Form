@@ -15,10 +15,3 @@ This project is designed with a **clean, minimal UI** and a **mobile-first layou
 
 ---
 
-## 🛠️ Technologies Used  
-- **HTML5**  
-- **CSS3** (Flexbox + Grid for layout)  
-
----
-
-## 📂 Project Structure  
